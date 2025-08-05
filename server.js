@@ -1,9 +1,14 @@
 var express = require('express');
 var os = require('os');
+var path = require('path');
+
 var app = express();
 
+var distPath = path.join(__dirname, 'frontend', 'dist');
+app.use(express.static(distPath));
+
 app.get('/', function(req, res){
-    res.send('Hello World!');
+    res.sendFile(path.join(distPath, 'index.html'));
     console.log("Requested route: /");
 });
 

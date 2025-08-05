@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "A Node.js App using express",
   "dependencies": {
-	"express": "*"
-   },
+    "express": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
   "engine": "node >=0.6.x"
 }
