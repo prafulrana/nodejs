@@ -1,6 +1,7 @@
 var express = require('express');
 var os = require('os');
 var path = require('path');
+
 var app = express();
 
 var distPath = path.join(__dirname, 'frontend', 'dist');
